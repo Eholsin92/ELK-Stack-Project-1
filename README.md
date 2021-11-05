@@ -30,7 +30,9 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 -Using a jump box allows the administrator to have a single node that can be used to configure the rest of the network and allow the admin to have a single node to protect, secure, and monitor decreasing the attack vectors. 
 
 -Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic/usage.
+
 -Filebeat watches logs and locations that you specify and sends any events or changes to your ELK stack. 
+
 -Metricbeat records and monitors system performance such as system CPU, memory use, memory load, etc. 
 
 The configuration details of each machine may be found below.
