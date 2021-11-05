@@ -113,7 +113,8 @@ Which file is the playbook? Where do you copy it?
 Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 - Update the ansible hosts file to include the IP address of the machine(s) you wish to run the playbook on. These will be grouped in different names (ex: [webservers], [elk]) which can be added to hosts in an ansible playbook to ensure the playbook only runs on the machines in the group specified in the playbook. 
 Which URL do you navigate to in order to check that the ELK server is running?
-- http://[yourIPaddress]:5601/app/kibana. Mine was http://20.85.241.248:5601:/app/kibana  
+- http://[yourIPaddress]:5601/app/kibana. Mine was http://20.85.241.248:5601:/app/kibana. It should look like this:
+[![Kibana-dashboard-2.png](https://i.postimg.cc/28p4Ggtk/Kibana-dashboard-2.png)](https://postimg.cc/jCXwd3Km)
 
 
 To run the playbook for filebeat use the command: ansible-playbook filebeat-playbook.yml
