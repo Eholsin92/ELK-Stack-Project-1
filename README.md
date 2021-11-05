@@ -117,6 +117,8 @@ Which URL do you navigate to in order to check that the ELK server is running?
 [![Kibana-dashboard-2.png](https://i.postimg.cc/28p4Ggtk/Kibana-dashboard-2.png)](https://postimg.cc/jCXwd3Km)
 
 
-To run the playbook for filebeat use the command: ansible-playbook filebeat-playbook.yml
-To run the playbook for metricbeat use the command: ansible-playbook filebeat-playbook.yml
+To run the playbook for filebeat use the command: 
+- ansible-playbook filebeat-playbook.yml
+To run the playbook for metricbeat use the command: 
+- ansible-playbook filebeat-playbook.yml
 
