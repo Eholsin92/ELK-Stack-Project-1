@@ -108,7 +108,7 @@ Under the [webservers] section of hosts. This allows you to group together certa
 You can also go to http://[yourIPaddress]:5601/app/kibana and navigate to filebeat and metricbeat to ensure the data is coming in correctly. 
 
 - Which file is the playbook? Where do you copy it?
- - The playbook for filebeat is /etc/ansible/roles/filebeat-playbook.yml. The playbook for metricbeat is /etc/ansible/roles/metricbeat-playbook.yml. Copy both of them into the /etc/ansible folder for ease of finding them. 
+     - The playbook for filebeat is /etc/ansible/roles/filebeat-playbook.yml. The playbook for metricbeat is /etc/ansible/roles/metricbeat-playbook.yml. Copy both of them into the /etc/ansible folder for ease of finding them. 
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 Update the ansible hosts file to include the IP address of the machine(s) you wish to run the playbook on. These will be grouped in different names (ex: [webservers], [elk]) which can be added to hosts in an ansible playbook to ensure the playbook only runs on the machines in the group specified in the playbook. 
 - Which URL do you navigate to in order to check that the ELK server is running?
