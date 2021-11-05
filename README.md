@@ -54,7 +54,7 @@ Only the Jumpbox and Web server machines can accept connections from the Interne
 - 75.176.52.211
 
 Machines (Webservers and ELK VM) within the network can only be accessed by the Ansible container on the Jump Box Provisioner.
-- _TODO: The Ansible container within the Jump Box Provisioner is the only machine allowed to access my ELK VM. The IP address of the Ansible container is 10.0.0.4. 
+- The Ansible container within the Jump Box Provisioner is the only machine allowed to access my ELK VM. The IP address of the Ansible container is 10.0.0.4. 
 
 A summary of the access policies in place can be found in the table below.
 
@@ -70,16 +70,16 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it ensured all configurations were carried out in the exact same way and takes out the variance of human error. It also allows the ability to configure multiple machines at the same time using the same configuration file. 
 
-The playbook implements the following tasks:
-Increase memory of ELK VM
-Install docker.io
-Install python3-pip
-Download and install the ELK container
-Ensure the ELK contain is enabled and running on the VM
+- The playbook implements the following tasks:
+- Increase memory of ELK VM
+- Install docker.io
+- Install python3-pip
+- Download and install the ELK container
+- Ensure the ELK contain is enabled and running on the VM
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-
+[![Elk-docker-ps.png](https://i.postimg.cc/856SbFFz/Elk-docker-ps.png)](https://postimg.cc/mzBJLgNv)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
